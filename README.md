@@ -18,7 +18,7 @@ struct MyKeyHash {
 };
 ```
 	
-Declare a hash map with integer typed key and string type value pair
+Declare a hash map with an integer type key and string type value pair
 
 ```c++
 size_t tableSize = 10;
@@ -31,7 +31,7 @@ Put a key-value pair into the hashmap
 hmap.put(1, "1");
 ```
 
-Get the value by key; returns true if successful with value updated
+Get the value by key; returns true if successful with the updated value.
 
 ```c++
 string value;
@@ -41,7 +41,7 @@ bool result = hmap.get(2, value);
 ## Build
 
 This is a header only library, so no compile step is required.
-To use the functionality below however, you must use cmake to generate
+To use the functionality below, however, you must use cmake to generate
 the makefiles.
 
 ```bash
